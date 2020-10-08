@@ -222,11 +222,14 @@ input:checked + .slider:before {
   grid-template-areas: "header header menu menu";
   grid-gap: 10px;
   padding: 10px;
+  
 }
 
 .grid-container2 > div {
+  margin: auto 0;
   text-align: left;
   padding: 20px 0;
+
 }
 /*--- Font Styles ---*/
 h1 {
@@ -402,7 +405,7 @@ nav ul li:nth-child(3) {
   display: none;
   height: 93vh;
   background-color: var(--primary-color);
-  width: 450px;
+  width: 90%;
   right: 0;
   position: fixed;
   bottom: 0;
@@ -444,7 +447,7 @@ select {
 
 textarea {
   width: 90%;
-  height: 40vh;
+  height: 10vh;
   padding: 12px 20px;
   margin: 0px 0 10px 0;
   text-align: left;
@@ -758,6 +761,7 @@ input[type="submit"]:hover {
     text-align: left;
     padding: 10px 0;
     font-size: 4vw;
+    margin: auto 0;
   }
 
   .griditem1 {
@@ -765,6 +769,7 @@ input[type="submit"]:hover {
   }
   .griditem2 {
     grid-area: menu;
+    margin: auto 0;
   }
 
   .grid-container2 {
@@ -777,6 +782,7 @@ input[type="submit"]:hover {
   .grid-container2 > div {
     text-align: left;
     padding: 20px 0;
+    margin: auto 0;
   }
 }
 
