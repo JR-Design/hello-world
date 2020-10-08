@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>James Ross - Designer/Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.css" />
+  </head>
+  <body class="AboutBody" onscroll="pageDepth()">
+    <div id="progressbar"></div>
+    <div class="navwrapper">
+      <nav>
+        <a href="./Index.html">
+          <div id="logo"><h6 style="text-decoration: none;">JR</h6></div>
+        </a>
+        <ul>
+          <li class="navSpacing"><a href="./work.html">Work</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="wrapper">
+      <h1 class="topspacing">
+        OH JEEZ, I appreicate you checking out this page… Here’s a <br />
+        bit about me.
+      </h1>
+      <div id="highlight"></div>
+      <br />
+      <h3 style="font-size:38px;">Interest include</h3>
+      <br />
+      <h5>• &nbsp;&nbsp; Web Design & Development</h5>
+      <h5>• &nbsp;&nbsp; UI/UX Design</h5>
+      <h5>• &nbsp;&nbsp; Psychology & Philosophy</h5>
+      <h5>• &nbsp;&nbsp; Marketing & Sales</h5>
+      <h5>• &nbsp;&nbsp; Photography & Graphic Design</h5>
+      <h5>• &nbsp;&nbsp; Reading & Learning</h5>
+      <h5>• &nbsp;&nbsp; Working Out & Health</h5>
+      <h5>• &nbsp;&nbsp; Being a Computer Nerd</h5>
+      <br />
+      <h3 style="font-size:38px;margin-top:60px;">Timeline/C.V.</h3>
+
+      <div class="grid-container">
+        <img class="timeline" src="./imgs/Timeline.png" />
+        <div class="section1">
+          <h4>
+            I started experimenting with Photography where I gained an
+            appreication for fine art, imagery and colour.
+          </h4>
+          <img class="Timelineimg" src="./imgs/Photo.png" />
+        </div>
+        <div class="section2">
+          <h4>
+            I worked as a marketing and sales associate in collaboration with a
+            small business owner where I learned first hand sales, marketing and
+            fundamental buisness skills.
+          </h4>
+        </div>
+        <div class="section3">
+          <h4>
+            After a successful summer of learning business development,
+            with my background in photography I decided to pursue my interest in
+            graphic design at Cambrian College.
+          </h4>
+        </div>
+        <div class="section4">
+          <h4>
+            After my first year of school I went and got a full-time summer
+            position at a startup technology company where I learnt general I.T,
+            web design and development which was a life-long passion and
+            interest of mine. I wore many different hats while working.
+          </h4>
+        </div>
+        <div class="section5">
+          <h4>
+            Trying to countine work as a developer while returning to school I
+            ended up focusing less on my school work and much more on
+            self-teaching myself HTML, CSS, Javascript, PHP and MySQL. Tutoring
+            peers with my strong knowledge on web design and frontend
+            development allowed me to learn, teach and collobrate with peers.
+          </h4>
+        </div>
+        <div class="section6">
+          <h4>
+            I returned to my full-time summer position as a developer/designer
+            where I felt that my knowledge was much more well rounded and I
+            worked on more demanding complex projects.
+          </h4>
+        </div>
+        <div class="section7">
+          <h4>
+            Returning to school I kept my self-teaching efforts throughout the
+            first semester learning backend development such as Node.JS,
+            Computing Fundementals and Databases, while having a stronger focus
+            on my graphic design work in the second semester of the year. All
+            while continuing to tutor my peers in web design and development.
+          </h4>
+        </div>
+        <div class="section8"><h4>You’re all caught up!</h4></div>
+      </div>
+
+      <button id="contact" onclick="contactSlide()">Contact</button>
+
+      <div id="contactSection">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Your Email</label>
+          <input type="text" id="email" name="email" />
+
+          <label for="dates">Do you have an ideal start and end date?</label>
+          <input type="text" id="dates" name="dates" />
+          <label for="help">What can I help you with?</label>
+          <textarea
+            id="story"
+            id="help"
+            name="help"
+            rows="5"
+            cols="33"
+          ></textarea>
+
+          <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+          <label for="budget"
+            >How much do you have budgeted <br />
+            for your project?</label
+          >
+          <div class="custom-select">
+            <select name="budget">
+              <option value="0">Please Select</option>
+              <option value="1">2500-5000</option>
+              <option value="2">5000-10000</option>
+              <option value="3">10000+</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+
+          <input type="submit" value="Let's Get Started" />
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./Jquery.js"></script>
+    <script type="text/javascript" src="./moment.min.js"></script>
+    <script type="text/javascript" src="./daterangepicker.js"></script>
+    <script src="main.js"></script>
+    <script>
+      $('input[name="dates"]').daterangepicker();
+    </script>
+  </body>
+</html>
