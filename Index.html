@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>James Ross - Designer/Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.css" />
+  </head>
+  <body onscroll="pageDepth()">
+    <div id="progressbar"></div>
+    <div class="navwrapper">
+      <nav>
+        <a href="./Index.html">
+          <div id="logo"><h6 style="text-decoration: none;">JR</h6></div>
+        </a>
+        <ul>
+          <li class="navSpacing"><a href="./work.html">Work</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="wrapper">
+      <br />
+      <h1 class="topspacing">
+        Hello I’m James Ross, a designer/<br />
+        developer currently working in <br />
+        Sudbury, ON.
+      </h1>
+      <div id="highlight"></div>
+      <h6>Choose a colour</h6>
+
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+
+      <div>
+        <img
+          id="portrait"
+          src="./imgs/me_2.jpg"
+          alt="self-portrait of myself with a laptop"
+        />
+        <div id="portraitTrim"></div>
+
+
+        <div class="socialMedia">
+          <div>
+            <a href="#"><img src="./imgs/Social/034-instagram.png" alt=""/></a>
+          </div>
+          <div>
+            <a href="#"><img src="./imgs/Social/039-github.png" alt=""/></a>
+          </div>
+          <div>
+            <a href="#"><img src="./imgs/Social/013-twitter-1.png" alt=""/></a>
+          </div>
+          <div>
+            <a href="#"><img src="./imgs/Social/045-facebook.png" alt=""/></a>
+          </div>
+          <div>
+            <a href="#"><img src="./imgs/Social/002-youtube.png" alt=""/></a>
+          </div>
+        </div>
+
+        <div style="margin-top: -600px;"> 
+          <h1> Hello World.</h1>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    
+    
+
+    <button id="contact" onclick="contactSlide()">Contact</button>
+
+    <div id="contactSection">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Your Email</label>
+        <input type="text" id="email" name="email" />
+
+        <label for="dates">Do you have an ideal start and end date?</label>
+        <input type="text" id="dates" name="dates" />
+        <label for="help">What can I help you with?</label>
+        <textarea
+          id="story"
+          id="help"
+          name="help"
+          rows="5"
+          cols="33"
+        ></textarea>
+
+        <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+        <label for="budget"
+          >How much do you have budgeted <br />
+          for your project?</label
+        >
+        <div class="custom-select">
+          <select name="budget">
+            <option value="0">Please Select</option>
+            <option value="1">2500-5000</option>
+            <option value="2">5000-10000</option>
+            <option value="3">10000+</option>
+            <option value="4">Other</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Let's Get Started" />
+      </form>
+    </div>
+    <script type="text/javascript" src="./Jquery.js"></script>
+    <script type="text/javascript" src="./moment.min.js"></script>
+    <script type="text/javascript" src="./daterangepicker.js"></script>
+    <script src="main.js"></script>
+    <script>
+      $('input[name="dates"]').daterangepicker();
+    </script>
+  </body>
+</html>
