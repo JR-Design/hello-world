@@ -296,7 +296,8 @@ h6 {
   padding-right: 2px;
   font-size: 41px;
   text-align: right;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
   color: black;
   text-decoration: none;
 }
