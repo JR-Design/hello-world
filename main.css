@@ -229,6 +229,7 @@ input:checked + .slider:before {
   margin: auto 0;
   text-align: left;
   padding: 20px 0;
+  max-width: 620px;
 
 }
 /*--- Font Styles ---*/
