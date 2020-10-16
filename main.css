@@ -64,6 +64,42 @@ body {
   width: 860px;
 }
 
+
+/* About me Icons */
+.icon_div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  }
+  
+.icon_div section {
+  display: inline;
+  text-align: center;
+  border: var(--font-color) 1px solid;
+  height: 220px;
+  width: 220px;
+  border-radius: 15px;
+}
+  
+.icon {
+  width: auto;
+  height: 112px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+  filter: var(--main-filter);
+}
+
+
+#about {
+  margin-top: 100px;
+}
+
+
+
 /*slider switch css */
 .theme-switch-wrapper {
   display: flex;
@@ -255,6 +291,7 @@ input:checked + .slider:before {
 
 
 
+
 .navwrapper {
   height: 90px;
   width: 100%;
@@ -415,7 +452,7 @@ h5 {
 h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--font-color);
   line-height: 19px;
   margin: 0;
@@ -439,8 +476,9 @@ p {
 
 .pages {
   width: 100vw;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  overflow: hidden;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 #logo {
   float: left;
@@ -880,7 +918,7 @@ input[type="submit"]:hover {
     z-index: -10;
   }
 
-  #highlight {
+  .highlight {
     position: relative;
     top: -5.5vw;
     left: 15px;
@@ -923,7 +961,7 @@ input[type="submit"]:hover {
     width: 90vw;
   }
   #section1 {
-    height: 600px;
+    height: 300px;
   }
 
   .grid-container {
