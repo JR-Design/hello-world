@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 html {
   overflow-x: hidden;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
