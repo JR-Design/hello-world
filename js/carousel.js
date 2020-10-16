@@ -224,14 +224,14 @@
                 lightbox__image[fix].classList.remove("lightbox__image_active");
                 return;
             }
-            /*
+            
             // If event touch is't on item carousel
             if (event.target.classList.contains("carousel__item")) {
                 title.style.transform = "translateY(-208px)";
                 carouselMousedown(event);
                 return;
             }
-            */
+            
             return;
         }, false);
     }, false);
