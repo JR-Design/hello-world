@@ -1,4 +1,4 @@
-﻿/*---------------------------------------------------
+/*---------------------------------------------------
 Carousel
 ---------------------------------------------------*/
 .wrap_carousel {
@@ -117,12 +117,12 @@ Carousel
     font-size: 40px;
     color: var(--font-color);
     pointer-events: none;
-	margin: 0;
+    margin: 0;
     -webkit-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
-       -moz-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
-        -ms-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
-         -o-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
-            transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
+    -moz-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
+    -ms-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
+    -o-transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 0.6s cubic-bezier(.87,-.41,.19,1.44);
 }
 
 /*---------------------------------------------------
@@ -287,6 +287,11 @@ Media Queries
     }
 	
     .carousel__item {
-        margin-right: 0px;
+        margin-right: 10px;
+    }
+
+    .title_carousel {
+        left: 5%;
+        top: 38%;
     }
 }
