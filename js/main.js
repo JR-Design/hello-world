@@ -1,14 +1,4 @@
 
-
-//INTRO ANIMATION JAZZ
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.35 });
-tl.to(".slider2", { y: "-100%", duration: 1.5, delay: 0.5 });
-tl.to(".intro", { y: "-100%", duration: 0.5 }, "-=1");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
-tl.fromTo("main", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
-
 //UNUSED FUNCTION FOR CONTACT 
 function contactSlide() {
   var contact = document.getElementById("contact");
@@ -155,3 +145,13 @@ document.addEventListener("click", closeAllSelect);
 
 
 
+
+
+//INTRO ANIMATION JAZZ
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.35 });
+tl.to(".slider2", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 0.5 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo("main", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
