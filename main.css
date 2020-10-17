@@ -79,7 +79,7 @@ body {
 .icon_div section {
   display: inline;
   text-align: center;
-  border: var(--font-color) 1px solid;
+  border: var(--primary-color) 1px solid;
   height: 220px;
   width: 220px;
   border-radius: 15px;
@@ -914,14 +914,14 @@ input[type="submit"]:hover {
     width: 68vw;
     position: relative;
     top: -40vw;
-    left: 22vw;
+    left: 20vw;
     z-index: -10;
   }
 
   .highlight {
     position: relative;
     top: -5.5vw;
-    left: 15px;
+    left: 16px;
     height: 6vw;
     width: 36vw;
   }
@@ -961,7 +961,7 @@ input[type="submit"]:hover {
     width: 90vw;
   }
   #section1 {
-    height: 300px;
+    height: 70vw;
   }
 
   .grid-container {
