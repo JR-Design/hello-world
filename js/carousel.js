@@ -59,6 +59,9 @@
         function carouselMousemove(event) {
             touchmoveX = event.touches && event.changedTouches[0].clientX || event.clientX;
             distanceCarousel = Math.round(touchmoveX) - touchstartX;
+            console.log(distanceCarousel);
+            console.log(positionLeft);
+
             carousel.style.transform = "translateX(" + (positionLeft + distanceCarousel) + 'px)';
         }
 
@@ -91,8 +94,8 @@
                 itemSize*6
             ];
 
-            // Limiter carousel
-            if (positionLeft > 0) {
+            // Limiter carousel positionLeft = 0 Makes it move static, positionRight > 0 makes it fluid
+            if (positionLeft = 0) {
                 carousel.style.transform = "translateX(" + 0 + ')';
                 distanceCarousel = 0;
                 return;

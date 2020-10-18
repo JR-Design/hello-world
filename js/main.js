@@ -154,3 +154,6 @@ intro.to(".text", { y: "0%", duration: 1, stagger: 0.35 });
 intro.to(".slider2", { y: "-100%", duration: 2, delay: 0.5 });
 intro.to(".intro", { y: "-100%", duration: 0.5 }, "-=1.5");
 intro.fromTo("main", { opacity: 1 }, { opacity: 1, duration: 1 }, "-=1");
+intro.to(".highlight", {width: "367px", duration: 0.35}, "-=0.5");
+
+
