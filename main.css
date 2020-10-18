@@ -33,6 +33,7 @@ body {
   --main-filter: invert(0);
   --main-filter-inversed: invert(1);
   --highlight-shadow: rgba(0,0,0,1);
+  --box-shadow-1: rgba(0, 0, 0, 0.08);
 }
 [data-theme="dark"] {
   --primary-color: #9a97f3;
@@ -47,6 +48,7 @@ body {
   --main-filter: invert(1);
   --main-filter-inversed: invert(0);
   --highlight-shadow: rgba(255, 255, 255, 1);
+  --box-shadow-1: rgba(154, 151, 243, 0.08);
 }
 
 .socialMedia > div > a {
@@ -95,7 +97,7 @@ body {
 
 
 #about {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 
@@ -226,6 +228,7 @@ input:checked + .slider:before {
   margin: 0px auto;
 }
 
+/*---- CIRCUITS ANIMATION JAZZ -----*/
 @keyframes Circuits {
 0%    {margin-top: 0%}
 12%    {margin-top: -1%}
@@ -246,11 +249,60 @@ input:checked + .slider:before {
 .imageScroll .circuits {
   max-width: 100%;
   margin-top: 0;
-  animation: Circuits 25s infinite;  
+  animation: Circuits 20s infinite;  
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   background: white;
 }
 
 
+/*---- Adanac ANIMATION JAZZ -----*/
+@keyframes Adanac {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -237%}
+  100% {margin-top: -1%}
+}
+  
+.imageScroll .adanac {
+    max-width: 100%;
+    margin-top: 0;
+    animation: Adanac 10s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);  
+    background: white;
+}
+
+/*---- Able ANIMATION JAZZ -----*/
+@keyframes Able {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -310%}
+  100% {margin-top: -1%}
+}
+  
+.imageScroll .able {
+    max-width: 100%;
+    margin-top: 0;
+    animation: Able 10s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);  
+    background: white;
+}
+
+/*---- CHHA ANIMATION JAZZ -----*/
+@keyframes CHHA1 {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -275%}
+  100% {margin-top: -1%}
+}
+  
+.imageScroll .CHHA1 {
+    max-width: 100%;
+    margin-top: 0;
+    animation: CHHA1 10s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);  
+    background: white;
+}
+
+
+
+/*--- Portfolio CSS JAZZ--*/
 .Portfolio_Full_Width_Section {
   background: var(--bg-color);
   padding: 40px 0px;
@@ -258,7 +310,7 @@ input:checked + .slider:before {
   max-width: 1150px;
   margin: 20px auto;
   border-radius: 15px;
-  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 1px 2px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
 }
 .Used_Apps img {
   width: 63px;
@@ -274,7 +326,8 @@ input:checked + .slider:before {
   max-width: 49%;
   margin: 20px auto;
   border-radius: 15px;
-  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: inset 1px 1px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
 }
 
 .Portfolio_Half_Width_Section img {
@@ -363,7 +416,7 @@ input:checked + .slider:before {
   right: -230px;
 }
 .socialMedia > div {
-  padding: 10px 0 10px 0;
+  padding: 12px 0 12px 0;
   width: 32px;
 }
 .socialMedia > div > a > img {
@@ -948,10 +1001,10 @@ input[type="submit"]:hover {
     right: -5vw;
   }
   .socialMedia > div {
-    width: 24px;
+    width: 34px;
   }
   .socialMedia > div > a > img {
-    width: 24px;
+    width: 34px;
   }
 
   #portraitTrim {
@@ -1044,9 +1097,65 @@ input[type="submit"]:hover {
     padding: 20px 0;
     margin: auto 0;
   }
+
+  .socialMedia > div {
+    padding: 12px 0 12px 0;
+    width: 32px;
+  }
+
+  /*---- Adanac ANIMATION JAZZ -----*/
+@keyframes Adanac {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -200%}
+  100% {margin-top: -1%}
+}
+
+/*---- CIRCUITS ANIMATION JAZZ -----*/
+@keyframes Circuits {
+  0%    {margin-top: 0%}
+  12%    {margin-top: -1%}
+  16%    {margin-top: -45%}
+  28%    {margin-top: -50%}
+  34%   {margin-top: -85%}
+  42%   {margin-top: -90%}
+  48%   {margin-top: -140%}
+  56%   {margin-top: -145%}
+  62%    {margin-top: -210%}
+  70%   {margin-top: -215%}
+  76%   {margin-top: -300%}
+  84%   {margin-top: -310%}
+  95%  {margin-top: -350%}
+  100% {margin-top: -1%}
+  }
+
+/*---- Able ANIMATION JAZZ -----*/
+@keyframes Able {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -270%}
+  100% {margin-top: -1%}
+}
+
+/*---- CHHA ANIMATION JAZZ -----*/
+@keyframes CHHA1 {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -235%}
+  100% {margin-top: -1%}
+}
+
+
+
 }
 
 @media only screen and (max-width: 640px) {
+  .pages {
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+
+
+
   nav {
     width: 92vw;
   }
@@ -1062,7 +1171,7 @@ input[type="submit"]:hover {
   }
   .socialMedia {
     width: 20px;
-    top: -96vw;
+    top: -99vw;
     right: -5vw;
   }
   .socialMedia > div {
@@ -1123,5 +1232,75 @@ input[type="submit"]:hover {
   filter: var(--main-filter);
 }
 
+.socialMedia > div {
+  padding: 6px 0 6px 0;
+  width: 22px;
+}
+
+  /*---- Adanac ANIMATION JAZZ -----*/
+  @keyframes Adanac {
+    0%    {margin-top: 0%}
+    75%  {margin-top: -105%}
+    100% {margin-top: -1%}
+  }
 
 
+  /*--- Circuits ANIMATION JAZZ -----*/
+  @keyframes Circuits {
+    0%    {margin-top: 0%}
+    12%    {margin-top: -1%}
+    95%  {margin-top: -225%}
+    100% {margin-top: -1%}
+    }
+
+    /*---- Able ANIMATION JAZZ -----*/
+@keyframes Able {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -170%}
+  100% {margin-top: -1%}
+}
+
+/*---- CHHA ANIMATION JAZZ -----*/
+@keyframes CHHA1 {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -105%}
+  100% {margin-top: -1%}
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+
+  .icon_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 130px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    }
+    
+  .icon_div section {
+    display: inline;
+    text-align: center;
+    border: var(--primary-color) 1px solid;
+    height: 130px;
+    width: 130px;
+    border-radius: 15px;
+  }
+
+  .icon {
+    width: auto;
+    height: 64px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    filter: var(--main-filter);
+  }
+
+
+}
