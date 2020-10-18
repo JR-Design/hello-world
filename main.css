@@ -1,0 +1,1306 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  overflow-x: hidden;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--bg-color);
+
+}
+
+.AboutBody {
+  height: 3150px;
+}
+
+:root {
+  --primary-color: #ffec00;
+  --primary-color-inverse: #9a97f3;
+  --secondary-color: #878787;
+  --form-background: #fff;
+  --font-color: #151515;
+  --bg-color: #f7f7f7;
+  --bg-color2: #f7f7f700;
+  --bg-color2i: #16162500;
+  --heading-color: #292922;
+  --main-filter: invert(0);
+  --main-filter-inversed: invert(1);
+  --highlight-shadow: rgba(0,0,0,1);
+  --box-shadow-1: rgba(0, 0, 0, 0.08);
+}
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --primary-color-inverse: #ffec00;
+  --secondary-color: #818cab;
+  --form-background: rgb(235, 235, 235);
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --bg-color2: #1616255a;
+  --bg-color2i: #f7f7f700;
+  --heading-color: #818cab;
+  --main-filter: invert(1);
+  --main-filter-inversed: invert(0);
+  --highlight-shadow: rgba(255, 255, 255, 1);
+  --box-shadow-1: rgba(154, 151, 243, 0.08);
+}
+
+.socialMedia > div > a {
+  filter: var(--main-filter);
+}
+.timeline {
+  position: relative;
+  z-index: -3;
+  top: -1950px;
+  left: -200px;
+  filter: var(--main-filter);
+}
+.Timelineimg {
+  margin-top: 10px;
+  width: 860px;
+}
+
+
+/* About me Icons */
+.icon_div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  }
+  
+.icon_div section {
+  display: inline;
+  text-align: center;
+  border: var(--primary-color) 1px solid;
+  height: 220px;
+  width: 220px;
+  border-radius: 15px;
+}
+  
+.icon {
+  width: auto;
+  height: 112px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+  filter: var(--main-filter);
+}
+
+
+#about {
+  /* margin-top: 100px; */
+}
+
+
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--primary-color-inverse);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color-inverse);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*-- Progress Bar --*/
+
+#progressbar {
+  width: 1vw;
+  height: 10px;
+  background: var(--primary-color);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.wrapper2 {
+  width: 100vw;
+  max-width: 1800px;
+  margin: 0 auto;
+  
+  align-content: center;
+  text-align: center;
+}
+
+.header_image {
+  padding-top: 90px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.body_full_width_image {
+  padding-top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.writeUp {
+  margin: 60px 0px;
+}
+
+.writeUp p {
+  max-width: 640px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.writeUp ul ol {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--font-color);
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/*-- Image overlay animation --*/
+.imageScroll {
+  height: 693px;
+  overflow: hidden;
+  max-width: 1150px;
+  margin: 0px auto;
+}
+
+/*---- CIRCUITS ANIMATION JAZZ -----*/
+@keyframes Circuits {
+0%    {margin-top: 0%}
+12%    {margin-top: -1%}
+16%    {margin-top: -45%}
+28%    {margin-top: -50%}
+34%   {margin-top: -85%}
+42%   {margin-top: -90%}
+48%   {margin-top: -140%}
+56%   {margin-top: -145%}
+62%    {margin-top: -210%}
+70%   {margin-top: -215%}
+76%   {margin-top: -305%}
+84%   {margin-top: -310%}
+95%  {margin-top: -380%}
+100% {margin-top: -1%}
+}
+
+.imageScroll .circuits {
+  max-width: 100%;
+  margin-top: 0;
+  animation: Circuits 20s infinite;  
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: white;
+}
+
+
+/*---- Adanac ANIMATION JAZZ -----*/
+@keyframes Adanac {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -237%}
+  100% {margin-top: -1%}
+}
+  
+.imageScroll .adanac {
+    max-width: 100%;
+    margin-top: 0;
+    animation: Adanac 10s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);  
+    background: white;
+}
+
+/*---- Able ANIMATION JAZZ -----*/
+@keyframes Able {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -310%}
+  100% {margin-top: -1%}
+}
+  
+.imageScroll .able {
+    max-width: 100%;
+    margin-top: 0;
+    animation: Able 10s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);  
+    background: white;
+}
+
+/*---- CHHA ANIMATION JAZZ -----*/
+@keyframes CHHA1 {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -275%}
+  100% {margin-top: -1%}
+}
+  
+.imageScroll .CHHA1 {
+    max-width: 100%;
+    margin-top: 0;
+    animation: CHHA1 10s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);  
+    background: white;
+}
+
+
+
+/*--- Portfolio CSS JAZZ--*/
+.Portfolio_Full_Width_Section {
+  background: var(--bg-color);
+  padding: 40px 0px;
+  width: 100%;
+  max-width: 1150px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: inset 1px 2px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
+}
+.Used_Apps img {
+  width: 63px;
+  height: 63px;
+  object-fit: contain;
+  margin: 6px;
+}
+
+.Portfolio_Half_Width_Section {
+  background: var(--bg-color);
+  padding: 40px 40px;
+  width: 49%;
+  max-width: 49%;
+  margin: 20px 10px;
+  border-radius: 15px;
+
+  box-shadow: inset 1px 1px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
+}
+
+.Portfolio_Half_Width_Section img {
+  width: 80%
+}
+
+.Parent_Portfolio_Half_Width_Section {
+  display: flex;
+}
+
+
+
+
+
+.intro {
+  z-index: 10000;
+  background: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider2 {
+  z-index: 10000;
+  background: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  z-index: 10000;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  background: var(--bg-color);
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+.navwrapper {
+  height: 90px;
+  width: 100%;
+  background: var(--bg-color);
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 8;
+}
+
+.topspacing {
+  padding-top: 125px;
+  padding-left: 10px;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+  position: relative;
+  top: -800px;
+  right: -230px;
+}
+.socialMedia > div {
+  padding: 12px 0 12px 0;
+  width: 32px;
+}
+.socialMedia > div > a > img {
+  width: 32px;
+}
+
+.section1 {
+  grid-area: section1;
+  width: 860px;
+}
+
+#section1 {
+  height: 600px;
+}
+.section2 {
+  grid-area: section2;
+}
+.section3 {
+  grid-area: section3;
+}
+.section4 {
+  grid-area: section4;
+}
+.section5 {
+  grid-area: section5;
+}
+.section6 {
+  grid-area: section6;
+  margin-top: 20px;
+}
+.section7 {
+  grid-area: section7;
+  margin-top: 10px;
+}
+.section8 {
+  grid-area: section8;
+  margin-top: 30px;
+}
+.section9 {
+  grid-area: section9;
+}
+.section10 {
+  grid-area: section10;
+}
+
+.grid-container {
+  height: 1000px;
+  width: 940px;
+  display: grid;
+  grid-template-areas:
+    "section1 section1 section1 section1 section1 section1 section1 section1"
+    "section2 section2 section2 section2 section2 section2 section2 section2"
+    "section3 section3 section3 section3 section3 section3 section3 section3"
+    "section4 section4 section4 section4 section4 section4 section4 section4"
+    "section5 section5 section5 section5 section5 section5 section5 section5"
+    "section6 section6 section6 section6 section6 section6 section6 section6"
+    "section7 section7 section7 section7 section7 section7 section7 section7"
+    "section8 section8 section8 section8 section8 section8 section8 section8";
+  grid-gap: 11px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.griditem1 {
+  grid-area: header;
+}
+.griditem2 {
+  grid-area: menu;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas: "header header menu menu";
+  grid-gap: 10px;
+  padding: 10px;
+  
+}
+
+.grid-container2 > div {
+  margin: auto 0;
+  text-align: left;
+  padding: 20px 0;
+  max-width: 620px;
+
+}
+/*--- Font Styles ---*/
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--font-color);
+  letter-spacing: 0.2px;
+  line-height: 19px;
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--font-color);
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 27px;
+  color: var(--font-color);
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--font-color);
+  margin-top: 20px;
+}
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--font-color);
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--font-color);
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.mark {
+  color: var(--primary-color);
+}
+
+
+
+.pages {
+  width: 100vw;
+  overflow: hidden;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+#logo {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+}
+#logo h6 {
+  padding-top: 30px;
+  padding-right: 2px;
+  font-size: 41px;
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.highlight {
+  position: relative;
+  top: -57px;
+  left: 0px;
+  z-index: -1000;
+  height: 59px;
+  width: 367px;
+  background-color: var(--primary-color);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.flex-container > div {
+  width: 50%;
+  margin: 10px;
+  padding-left: 25px;
+  text-align: left;
+}
+
+#portraitTrim {
+  border-width: 30px;
+  border-style: solid;
+  border-color: var(--primary-color);
+  height: 383px;
+  width: 587px;
+  position: relative;
+  top: -390px;
+  left: 350px;
+  z-index: -10;
+}
+
+/*--- Nav Styles ---*/
+nav {
+  padding: 20px 0 10px 0;
+  background-color: var(--bg-color);
+  position: fixed;
+  width: 940px;
+  z-index: 8;
+}
+
+.activeLink {
+  color: var(--secondary-color);
+}
+
+nav img {
+  width: 60px;
+}
+
+nav ul {
+  float: right;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin-top: 10px;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+nav ul li a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.navSpacing {
+  margin: 10px 100px 0 0;
+}
+nav ul li:nth-child(3) {
+  display: none;
+}
+
+/* ---- CONTACT SECTION ---- */
+#contact {
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+  background-color: var(--primary-color);
+  border-top-left-radius: 5px;
+  border: none;
+}
+#contact:focus {
+  outline: 0;
+}
+
+#contactSection {
+  z-index: 99;
+  border-top-left-radius: 5px;
+  overflow-y: auto;
+  display: none;
+  height: 93vh;
+  background-color: var(--primary-color);
+  width: 90%;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+/*-- Forms --*/
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
+
+form {
+  padding-left: 35px;
+  padding-top: 1vh;
+}
+form > label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-top: 0px;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+input[type="text"],
+select {
+  width: 90%;
+  margin: 0px auto 2vh;
+  padding: 12px 20px;
+  display: inline-block;
+  background-color: var(--form-background);
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 90%;
+  height: 10vh;
+  padding: 12px 20px;
+  margin: 0px 0 10px 0;
+  text-align: left;
+  display: inline-block;
+  border: 1px solid black;
+  background: var(--form-background);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+input[type="submit"] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  width: 90%;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  padding: 14px 20px;
+  margin: 2vh 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(58, 58, 58);
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: var(--form-background);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: var(--form-background);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: var(--primary-color);
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item3 {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.SeeProject {
+  background-color: var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  margin: 20px 0 0 20px;
+  padding: 1em 2em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.6em;
+  color: black;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 15px var(--primary-color);
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.SeeProject:hover {
+  box-shadow: 0 6px 25px var(--primary-color);
+  transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.SeeProject:active {
+  box-shadow: 0 0px 0px var(--primary-color);
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.SeeProject:focus {
+  outline: 0;
+}
+
+#portrait {
+  margin-left: 300px;
+  width: 635px;
+}
+
+
+/*-- Tablet 940px --*/
+@media only screen and (max-width: 1024px) {
+  /*--- Nav Styles ---*/
+  nav {
+    width: 80vw;
+  }
+
+  nav ul li {
+    padding-top: 6px;
+    margin-right: 15px;
+    font-size: 24px;
+  }
+
+  .navSpacing {
+    margin: 10px 20vw 0 0;
+  }
+
+  .AboutBody {
+    height: 2900px;
+  }
+
+  .SeeProject {
+    background-color: yellow;
+    margin: 12px 0 0 0px;
+    padding: 1em 2em;
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+
+  #logo h6 {
+    font-size: 36px;
+  }
+
+  #wrapper {
+    width: 98vw;
+  }
+
+  #portrait {
+    margin-left: 15vw;
+    width: 75vw;
+  }
+
+  .socialMedia {
+    width: 24px;
+    top: -91vw;
+    right: -5vw;
+  }
+  .socialMedia > div {
+    width: 34px;
+  }
+  .socialMedia > div > a > img {
+    width: 34px;
+  }
+
+  #portraitTrim {
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    height: 40vw;
+    width: 68vw;
+    position: relative;
+    top: -40vw;
+    left: 20vw;
+    z-index: -10;
+  }
+
+  .highlight {
+    position: relative;
+    top: -5.5vw;
+    left: 16px;
+    height: 6vw;
+    width: 36vw;
+  }
+
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 5.2vw;
+    color: var(--font-color);
+    margin: 0 0 0 10px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h6 {
+    margin: 0 0 0 10px;
+  }
+  h5 {
+    font-size: 4vw;
+  }
+  h4 {
+    font-size: 3vw;
+    padding-left: 5px;
+  }
+  .theme-switch-wrapper {
+    margin: 0 0 20px 10px;
+  }
+
+  .Timelineimg {
+    width: 90vw;
+    padding-left: 5px;
+  }
+
+  .section1 {
+    grid-area: section1;
+    width: 90vw;
+  }
+  #section1 {
+    height: 70vw;
+  }
+
+  .grid-container {
+    padding-left: 26px;
+    width: 90vw;
+  }
+
+  .grid-container > div {
+    text-align: left;
+    padding: 10px 0;
+    font-size: 4vw;
+    margin: auto 0;
+  }
+
+  .griditem1 {
+    grid-area: header;
+  }
+  .griditem2 {
+    grid-area: menu;
+    margin: auto 0;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-areas: "header header menu menu";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-container2 > div {
+    text-align: left;
+    padding: 20px 0;
+    margin: auto 0;
+  }
+
+  .socialMedia > div {
+    padding: 12px 0 12px 0;
+    width: 32px;
+  }
+
+  /*---- Adanac ANIMATION JAZZ -----*/
+@keyframes Adanac {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -200%}
+  100% {margin-top: -1%}
+}
+
+/*---- CIRCUITS ANIMATION JAZZ -----*/
+@keyframes Circuits {
+  0%    {margin-top: 0%}
+  12%    {margin-top: -1%}
+  16%    {margin-top: -45%}
+  28%    {margin-top: -50%}
+  34%   {margin-top: -85%}
+  42%   {margin-top: -90%}
+  48%   {margin-top: -140%}
+  56%   {margin-top: -145%}
+  62%    {margin-top: -210%}
+  70%   {margin-top: -215%}
+  76%   {margin-top: -300%}
+  84%   {margin-top: -310%}
+  95%  {margin-top: -350%}
+  100% {margin-top: -1%}
+  }
+
+/*---- Able ANIMATION JAZZ -----*/
+@keyframes Able {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -270%}
+  100% {margin-top: -1%}
+}
+
+/*---- CHHA ANIMATION JAZZ -----*/
+@keyframes CHHA1 {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -235%}
+  100% {margin-top: -1%}
+}
+
+
+
+}
+
+@media only screen and (max-width: 640px) {
+  .pages {
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+
+
+
+  nav {
+    width: 92vw;
+  }
+  .SeeProject {
+    background-color: yellow;
+    margin: 6px 0 0 0px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+  }
+  .grid-container {
+    padding-left: 6px;
+    width: 90vw;
+  }
+  .socialMedia {
+    width: 20px;
+    top: -99vw;
+    right: -5vw;
+  }
+  .socialMedia > div {
+    width: 20px;
+  }
+  .socialMedia > div > a > img {
+    width: 20px;
+  }
+  nav ul li {
+    padding-top: 6px;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  h5 {
+    font-size: 6vw;
+  }
+  h4 {
+    font-size: 4vw;
+    line-height: 6.2vw;
+  }
+  .AboutBody {
+    height: 2500px;
+  }
+
+  /* About me Icons */
+.icon_div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  }
+  
+.icon_div section {
+  display: inline;
+  text-align: center;
+  border: var(--primary-color) 1px solid;
+  height: 160px;
+  width: 160px;
+  border-radius: 15px;
+}
+  
+.icon {
+  width: auto;
+  height: 72px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  filter: var(--main-filter);
+}
+
+.socialMedia > div {
+  padding: 6px 0 6px 0;
+  width: 22px;
+}
+
+  /*---- Adanac ANIMATION JAZZ -----*/
+  @keyframes Adanac {
+    0%    {margin-top: 0%}
+    75%  {margin-top: -105%}
+    100% {margin-top: -1%}
+  }
+
+
+  /*--- Circuits ANIMATION JAZZ -----*/
+  @keyframes Circuits {
+    0%    {margin-top: 0%}
+    12%    {margin-top: -1%}
+    95%  {margin-top: -225%}
+    100% {margin-top: -1%}
+    }
+
+    /*---- Able ANIMATION JAZZ -----*/
+@keyframes Able {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -170%}
+  100% {margin-top: -1%}
+}
+
+/*---- CHHA ANIMATION JAZZ -----*/
+@keyframes CHHA1 {
+  0%    {margin-top: 0%}
+  95%  {margin-top: -105%}
+  100% {margin-top: -1%}
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+
+  .icon_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 130px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    }
+    
+  .icon_div section {
+    display: inline;
+    text-align: center;
+    border: var(--primary-color) 1px solid;
+    height: 130px;
+    width: 130px;
+    border-radius: 15px;
+  }
+
+  .icon {
+    width: auto;
+    height: 64px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    filter: var(--main-filter);
+  }
+
+
+}
