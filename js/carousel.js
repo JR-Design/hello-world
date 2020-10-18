@@ -198,7 +198,7 @@
             }
             // If event mousedown is't on item carousel
             if (event.target.classList.contains("carousel__item")) {
-                title.style.transform = "translateY(-180px)";
+                title.style.transform = "translateY(-190px)";
                 carouselMousedown(event);
                 return;
             }
@@ -227,7 +227,7 @@
             
             // If event touch is't on item carousel
             if (event.target.classList.contains("carousel__item")) {
-                title.style.transform = "translateY(-208px)";
+                title.style.transform = "translateY(-218px)";
                 carouselMousedown(event);
                 return;
             }

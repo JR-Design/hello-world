@@ -321,10 +321,10 @@ input:checked + .slider:before {
 
 .Portfolio_Half_Width_Section {
   background: var(--bg-color);
-  padding: 40px 0px;
+  padding: 40px 40px;
   width: 49%;
   max-width: 49%;
-  margin: 20px auto;
+  margin: 20px 10px;
   border-radius: 15px;
 
   box-shadow: inset 1px 1px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
