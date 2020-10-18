@@ -148,10 +148,9 @@ document.addEventListener("click", closeAllSelect);
 
 
 //INTRO ANIMATION JAZZ
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+const intro = gsap.timeline({ defaults: { ease: "power1.Out" } });
 
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.35 });
-tl.to(".slider2", { y: "-100%", duration: 1.5, delay: 0.5 });
-tl.to(".intro", { y: "-100%", duration: 0.5 }, "-=1");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
-tl.fromTo("main", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+intro.to(".text", { y: "0%", duration: 1, stagger: 0.35 });
+intro.to(".slider2", { y: "-100%", duration: 2, delay: 0.5 });
+intro.to(".intro", { y: "-100%", duration: 0.5 }, "-=1.5");
+intro.fromTo("main", { opacity: 1 }, { opacity: 1, duration: 1 }, "-=1");

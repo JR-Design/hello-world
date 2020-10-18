@@ -290,6 +290,7 @@ input:checked + .slider:before {
 
 
 .intro {
+  z-index: 10000;
   background: var(--bg-color);
   position: fixed;
   top: 0;
@@ -302,6 +303,7 @@ input:checked + .slider:before {
 }
 
 .slider2 {
+  z-index: 10000;
   background: var(--primary-color);
   position: fixed;
   top: 0;
@@ -312,6 +314,7 @@ input:checked + .slider:before {
 }
 
 .intro-text {
+  z-index: 10000;
   font-weight: 700;
   font-size: 3rem;
   color: var(--font-color);

@@ -12,7 +12,7 @@ Carousel
 
 #carousel {
     width: 150%;
-	min-height: 1px;
+    min-height: 1px;
     display: flex;
     touch-action: none;
     z-index: 1;
@@ -288,6 +288,10 @@ Media Queries
 	
     .carousel__item {
         margin-right: 10px;
+    }
+
+    .carousel__item:hover .carousel__link {
+        bottom: 25px;
     }
 
     .title_carousel {
