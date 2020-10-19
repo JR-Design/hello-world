@@ -406,6 +406,7 @@ input:checked + .slider:before {
 .topspacing {
   padding-top: 125px;
   padding-left: 10px;
+  letter-spacing: 0.5px;
 }
 .socialMedia {
   display: flex;
