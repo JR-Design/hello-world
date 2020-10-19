@@ -95,7 +95,7 @@
             ];
 
             // Limiter carousel positionLeft = 0 Makes it move static, positionRight > 0 makes it fluid
-            if (positionLeft = 0) {
+            if (positionLeft > 0) {
                 carousel.style.transform = "translateX(" + 0 + ')';
                 distanceCarousel = 0;
                 return;
