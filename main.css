@@ -388,6 +388,7 @@ input:checked + .slider:before {
 .hide2 {
   background: var(--bg-color);
   overflow: hidden;
+  margin-left: 20px;
 }
 
 .hide2 span {
@@ -414,7 +415,7 @@ input:checked + .slider:before {
 }
 
 .topspacing {
-  padding-top: 125px;
+  padding-top: 145px;
   padding-left: 10px;
   letter-spacing: 0.5px;
 }
@@ -435,12 +436,16 @@ input:checked + .slider:before {
 }
 
 .section1 {
+  overflow: hidden;
   grid-area: section1;
   width: 860px;
 }
 
 #section1 {
   height: 600px;
+}
+#section1 img {
+  overflow: hidden;
 }
 .section2 {
   grid-area: section2;
@@ -611,8 +616,8 @@ p {
 
 .highlight {
   position: relative;
-  top: -57px;
-  left: 0px;
+  top: -70px;
+  left: 9px;
   z-index: -1000;
   height: 59px;
   width: 367px;
@@ -1032,7 +1037,7 @@ input[type="submit"]:hover {
 
   .highlight {
     position: relative;
-    top: -5.5vw;
+    top: -6.5vw;
     left: 16px;
     height: 6vw;
     width: 36vw;
