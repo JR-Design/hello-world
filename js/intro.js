@@ -8,7 +8,7 @@ intro.to("#portraitTrim", {scaleY: 0, scaleX: 0});
 intro.to(".socialMedia > div > a > img", {scaleY: 1, translateX: "-100vw"});
 intro.to("#colorSelector", {scaleY: 1, translateX: -1000});
 intro.to("#portrait", { translateX: "-100vw"});
-intro.to(".pages", {translateX: "100vw"});
+intro.to(".pages", {translateX: "-100vw"});
 
 intro.to(".text", { y: "0%", duration: 1, stagger: 0.35 },"-=2");
 intro.to(".slider2", { y: "-100%", duration: 1.1, delay: 0.25 });

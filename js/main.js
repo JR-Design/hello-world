@@ -10,7 +10,7 @@ function contactSlide() {
   console.log(bottom); // rgb(0, 0, 0)
 
   if (contact.style.bottom <= "0px") {
-    contact.style.bottom = "93vh";
+    contact.style.bottom = "53vh";
     contactSection.style.display = "block";
   } else {
     contact.style.bottom = "0";
