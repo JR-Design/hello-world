@@ -386,7 +386,7 @@ input:checked + .slider:before {
 }
 
 .hide2 {
-  background: var(--bg-color);
+
   overflow: hidden;
   margin-left: 20px;
 }
