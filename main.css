@@ -415,7 +415,7 @@ input:checked + .slider:before {
 }
 
 .topspacing {
-  padding-top: 145px;
+  padding-top: 155px;
   padding-left: 10px;
   letter-spacing: 0.5px;
 }
@@ -436,7 +436,7 @@ input:checked + .slider:before {
 }
 
 .section1 {
-  overflow: hidden;
+ 
   grid-area: section1;
   width: 860px;
 }
@@ -616,7 +616,7 @@ p {
 
 .highlight {
   position: relative;
-  top: -70px;
+  top: -69px;
   left: 9px;
   z-index: -1000;
   height: 59px;
@@ -1048,7 +1048,7 @@ input[type="submit"]:hover {
     font-weight: 900;
     font-size: 5.2vw;
     color: var(--font-color);
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0px;
     padding: 0;
   }
   h2 {
