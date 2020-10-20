@@ -27,5 +27,6 @@ intro.to("#portraitTrim", {scaleY: 1, scaleX: 1, duration: 0.65,  }, "-=0.25");
 intro.to(".socialMedia > div > a > img", {scaleY: 1, translateX: 0, duration: 0.75, stagger: 0.05 }, "-=0.5");
 intro.to("#colorSelector", {scaleY: 1, translateX: 0, duration: 0.5, delay: 0, stagger: 0.25 },"-=0.5");
 
+
 intro.to(".pages", {translateX: 0, duration: 0.5, delay: 0, stagger: 0.25 },"-=3.5");
 
