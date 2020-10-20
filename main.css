@@ -385,6 +385,16 @@ input:checked + .slider:before {
   display: inline-block;
 }
 
+.hide2 {
+  background: var(--bg-color);
+  overflow: hidden;
+}
+
+.hide2 span {
+  overflow: hidden;
+  transform: translateY(-100%);
+  display: inline-block;
+}
 
 
 
