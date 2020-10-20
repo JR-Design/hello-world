@@ -392,7 +392,6 @@ input:checked + .slider:before {
 }
 
 .hide2 span {
-  overflow: hidden;
   transform: translateY(-100%);
   display: inline-block;
 }
@@ -415,7 +414,7 @@ input:checked + .slider:before {
 }
 
 .topspacing {
-  padding-top: 155px;
+  padding-top: 115px;
   padding-left: 10px;
   letter-spacing: 0.5px;
 }
@@ -616,7 +615,7 @@ p {
 
 .highlight {
   position: relative;
-  top: -69px;
+  top: -57px;
   left: 9px;
   z-index: -1000;
   height: 59px;
