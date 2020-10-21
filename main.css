@@ -54,6 +54,7 @@ body {
 .socialMedia > div > a {
   filter: var(--main-filter);
 }
+/*
 .timeline {
   position: relative;
   z-index: -3;
@@ -61,9 +62,10 @@ body {
   left: -200px;
   filter: var(--main-filter);
 }
+*/
 .Timelineimg {
   margin-top: 10px;
-  width: 860px;
+  /* width: 860px; */
 }
 
 
@@ -322,11 +324,10 @@ input:checked + .slider:before {
 .Portfolio_Half_Width_Section {
   background: var(--bg-color);
   padding: 40px 40px;
-  width: 49%;
-  max-width: 49%;
+  width: 370px;
+  max-width: 100%;
   margin: 20px 10px;
   border-radius: 15px;
-
   box-shadow: inset 1px 1px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
 }
 
@@ -336,6 +337,10 @@ input:checked + .slider:before {
 
 .Parent_Portfolio_Half_Width_Section {
   display: flex;
+  /* grid-template-columns: repeat(auto-fit, 141px); */
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 
@@ -414,7 +419,7 @@ input:checked + .slider:before {
 }
 
 .topspacing {
-  padding-top: 115px;
+  padding-top: 95px;
   padding-left: 10px;
   letter-spacing: 0.5px;
 }
@@ -971,6 +976,90 @@ input[type="submit"]:hover {
 }
 
 
+
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid var(--primary-color);
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: var(--box-shadow-1);
+  color: var(--bg-color);
+  font-family: "raleway", sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 70%;
+}
+.timeline h1 {
+  font-family: "raleway", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  font-family: "raleway", sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--font-color);
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 3.4em;
+}
+.timeline p {
+  font-size: 1.8em;
+  line-height: 1.6em;
+}
+.timeline .event {
+  border-bottom: 1px dashed var(--highlight-shadow);
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: var(--font-color);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 700;
+  font-size: 2em;
+  min-width: 120px;
+  font-family: "raleway", sans-serif;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px var(--primary-color);
+  left: -57.85px;
+  background: var(--bg-color);
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+
+
+
 /*-- Tablet 940px --*/
 @media only screen and (max-width: 1024px) {
   /*--- Nav Styles ---*/
@@ -993,10 +1082,10 @@ input[type="submit"]:hover {
   }
 
   .SeeProject {
-    background-color: yellow;
+    background-color: var(--primary-color);
     margin: 12px 0 0 0px;
     padding: 1em 2em;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1.2em;
   }
 
@@ -1039,7 +1128,7 @@ input[type="submit"]:hover {
 
   .highlight {
     position: relative;
-    top: -6.5vw;
+    top: -6vw;
     left: 16px;
     height: 6vw;
     width: 36vw;
@@ -1161,6 +1250,10 @@ input[type="submit"]:hover {
 }
 
 
+.timeline {
+  max-width: 50%;
+}
+
 
 }
 
@@ -1184,7 +1277,7 @@ input[type="submit"]:hover {
     width: 92vw;
   }
   .SeeProject {
-    background-color: yellow;
+    background-color: var(--primary-color);
     margin: 6px 0 0 0px;
     padding: 0.5em 1em;
     font-size: 1.2em;
@@ -1291,6 +1384,10 @@ input[type="submit"]:hover {
   100% {margin-top: -1%}
 }
 
+.timeline {
+  max-width: 40%;
+}
+
 
 }
 
@@ -1332,5 +1429,26 @@ input[type="submit"]:hover {
     filter: var(--main-filter);
   }
 
+  .timeline {
+    max-width: 60%;
+    /*
+    padding: 50px 10px 0px 10px;
+    margin: 50px 50px auto 30%;
+    */
+  }
+  .timeline .event:before {
+    left: -17.5px;
+    top: -25px;
+    color: var(--font-color);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 700;
+    font-size: 2em;
+    min-width: 65px;
+    font-family: "raleway", sans-serif;
+  }
+
 
 }
+
+

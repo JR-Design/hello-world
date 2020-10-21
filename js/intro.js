@@ -5,6 +5,7 @@ intro.to("nav", {translateY: -200});
 intro.to(".highlight", {scaleX: 0});
 intro.to("#portraitTrim", {scaleY: 0, scaleX: 0});
 
+
 intro.to(".socialMedia > div > a > img", {scaleY: 1, translateX: "-100vw"});
 intro.to("#colorSelector", {scaleY: 1, translateX: -1000});
 intro.to("#portrait", { translateX: "-100vw"});
