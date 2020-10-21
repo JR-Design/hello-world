@@ -334,6 +334,18 @@ input:checked + .slider:before {
   border-radius: 15px;
   box-shadow: inset 1px 2px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
 }
+.Portfolio_Full_Width_Section_2 {
+  background: var(--bg-color);
+  padding: 0px 0px;
+  width: 100%;
+  max-width: 1150px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: inset 1px 2px 10px var(--box-shadow-1), 10px 10px 10px 0px var(--box-shadow-1);
+}
+.Portfolio_Full_Width_Section_2 img {
+  border-radius: 15px;
+}
 .Portfolio_Full_Width_Section h3 {
   padding-bottom: 10px;
 }
@@ -433,6 +445,13 @@ input:checked + .slider:before {
 .hide2 span {
   transform: translateY(-100%);
   display: inline-block;
+}
+
+#colorSelector h6 {
+  margin-top: 0px;
+}
+#colorSelector {
+  margin-top: -40px;
 }
 
 
@@ -709,7 +728,7 @@ nav ul {
   justify-content: center;
 }
 nav ul li {
-  margin-top: 10px;
+  margin-top: 20px;
   list-style: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -724,7 +743,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 .navSpacing {
-  margin: 10px 100px 0 0;
+  margin: 20px 100px 0 0;
 }
 nav ul li:nth-child(3) {
   display: none;
@@ -1104,6 +1123,7 @@ input[type="submit"]:hover {
   nav ul li {
     padding-top: 6px;
     margin-right: 15px;
+    margin-top: 10px;
     font-size: 24px;
   }
 
@@ -1428,6 +1448,17 @@ input[type="submit"]:hover {
 
 
 @media only screen and (max-width: 640px) {
+
+  #colorSelector h6 {
+    font-size: 1em;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+
+  #colorSelector {
+    margin-top: -20px;
+  }
+  
 
   .datesLabel{
     display:none;

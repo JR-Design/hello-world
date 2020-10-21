@@ -105,14 +105,14 @@ Carousel
 }
 
 .carousel__item:hover .carousel__dsecription {
-    bottom: -50px;
+    bottom: -60px;
     z-index: 0;
 }
 
 .title_carousel {
     position: absolute;
     left: 25%;
-    top: 8%;
+    top: 28%;
     z-index: 6;
     font-size: 40px;
     color: var(--font-color);
