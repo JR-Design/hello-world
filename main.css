@@ -203,12 +203,15 @@ input:checked + .slider:before {
 }
 
 .writeUp {
-  margin: 60px 0px;
+  margin: 60px 8px;
 }
 
 .writeUp p {
   max-width: 640px;
   text-align: center;
+  font-size: 1.6em;
+  line-height: 1.8em;
+  letter-spacing: 0.04em;
   margin: 0 auto;
 }
 
@@ -332,7 +335,7 @@ input:checked + .slider:before {
 }
 
 .Portfolio_Half_Width_Section img {
-  width: 80%
+  width: 80%;
 }
 
 .Parent_Portfolio_Half_Width_Section {
