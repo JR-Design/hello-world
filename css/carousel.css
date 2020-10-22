@@ -112,7 +112,7 @@ Carousel
 .title_carousel {
     position: absolute;
     left: 25%;
-    top: 28%;
+    top: 20%;
     z-index: 6;
     font-size: 40px;
     color: var(--font-color);

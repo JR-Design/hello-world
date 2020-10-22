@@ -70,7 +70,8 @@
        <br>
        <p>The Sudbury Branch of The Canadian Hard of Hearing Association host an annual “Ultimate Dream Home” Giveaway 
            contest and due to Covid needed to drastically improve their website this year more than ever. 
-           They needed to appeal to a wider audience across ontario versus just the Sudbury market.</p>
+           They needed to appeal to a wider audience across ontario versus just the Sudbury market. 
+        They also needed analytics to work with their multiple advertising campaigns to see which was the most effective </p>
         </section>
 
         <div class="imageScroll">
@@ -82,12 +83,12 @@
             <br>
             <p>Originally their in-house designer was to produce the website design for my team to develop. 
                 Unfortunately his design was complex and not easily made responsive. 
-                We ended up having to create a new design from his graphics and apply a more modern approach 
+                We ended up having to create a new design from his graphics and apply a more modern design approach 
                 while staying in the requirements from the Ontario Gaming Commission. </p>
                 <br>
                 <p>
                     After many revisions we gained approval of the design from the client’s close eye and developed the website. 
-                    I also had to integrate google tag manager to appease the needs of the outsourced marketing team and manage the VPS.  
+                    I also had to integrate & manage google tag manager/analytics to appease the needs of the outsourced marketing teams and manage the VPS.  
                 </p>
         </section>
 
@@ -147,7 +148,7 @@
        <section class="writeUp">
        <h3>Problem</h3>
        <br>
-       <p>CHHA Sudbury needed a refresh on their website since their current website is dated. 
+       <p>CHHA Sudbury needed a refresh on their website since their current website is dated and doesn't represent them well. 
            I decided to take the opportunity in my Web III school course to create a responsive 
            landing page that I felt displayed the CHHA Sudbury Branch well.</p>
         </section>
@@ -278,6 +279,35 @@
         </div>
           
     </section>
+
+
+
+    <button id="contact" onclick="contactSlide()">Contact</button>
+
+    <div id="contactSection">
+      <form netlify>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Your Email</label>
+        <input type="text" id="email" name="email" />
+
+        <label class="datesLabel" for="dates">Do you have an ideal start time?</label>
+        <input type="text" id="dates" name="dates" />
+        <label for="help">What can I help you with?</label>
+        <textarea
+          id="story"
+          id="help"
+          name="help"
+          rows="5"
+          cols="33"
+        ></textarea>
+
+        <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+
+
+        <input type="submit" value="Let's Get Started" />
+      </form>
+    </div>
 
     
 <script src="./js/main.js"></script>
