@@ -1044,7 +1044,8 @@ input[type="submit"]:hover {
   border-left: 4px solid var(--primary-color);
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  background: var(--box-shadow-2);
+  border-radius: 10px;
+  box-shadow: inset 1px 2px 3px var(--box-shadow-1),10px 10px 10px var(--box-shadow-1);
   color: var(--bg-color);
   font-family: "raleway", sans-serif;
   margin: 50px auto;
