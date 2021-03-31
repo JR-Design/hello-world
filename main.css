@@ -186,6 +186,7 @@ input:checked + .slider:before {
 #wrapper {
   margin: 0 auto;
   width: 940px;
+  margin-bottom: 70px;
 }
 
 .wrapper2 {
@@ -1181,6 +1182,7 @@ input[type="submit"]:hover {
 
   #wrapper {
     width: 98vw;
+    margin-bottom: 70px;
   }
 
   #portrait {
