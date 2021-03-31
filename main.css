@@ -26,6 +26,7 @@ body {
   --secondary-color: #878787;
   --form-background: #fff;
   --font-color: #151515;
+  --font-color-inverse: #151515;
   --bg-color: #f7f7f7;
   --bg-color2: #f7f7f700;
   --bg-color2i: #16162500;
@@ -43,6 +44,7 @@ body {
   --secondary-color: #818cab;
   --form-background: rgb(235, 235, 235);
   --font-color: #e1e1ff;
+  --font-color-inverse: #151515;
   --bg-color: #161625;
   --bg-color2: #1616255a;
   --bg-color2i: #f7f7f700;

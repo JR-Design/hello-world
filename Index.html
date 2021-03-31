@@ -44,7 +44,10 @@
     
 
   </head>
+
+  
   <body class="main" onscroll="pageDepth()">
+    
   <main>    
 
     <div id="progressbar"></div>
@@ -69,7 +72,7 @@
         <span>developer currently working in </span>
       </h1>
       <h1 class="hide2">
-        <span>Sudbury, ON.</span>
+        <span class="SudburyON">Sudbury, ON.</span>
       </h1>
       <div class="highlight"></div>
 
@@ -311,18 +314,9 @@
 
 
 
-    <!--Page Animation-->
-    <script
-src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-crossorigin="anonymous"
-></script>
 
 
 
-
-
-    
     
 
     <button id="contact" onclick="contactSlide()">Contact</button>
@@ -352,6 +346,21 @@ crossorigin="anonymous"
       </form>
     </div>
     
+
+
+    <!-- Testing Animation -->
+    <style>
+      .gs-dev-tools {
+        bottom: 150px !important;
+        z-index: 1000000000 !important;
+        height: 100px !important;
+      }
+    </style>
+    <script src="./js/minified/gsap.min.js"></script>
+    <script src="./js/minified/GSDevTools.min.js"></script>
+    <script src="./js/minified/ScrollToPlugin.min.js"></script>
+
+
     <script src="./js/intro.js"></script>
     <script type="text/javascript" src="./js/Jquery.js"></script>
     <script type="text/javascript" src="./js/moment.min.js"></script>
@@ -362,5 +371,9 @@ crossorigin="anonymous"
     </script>
 
   <script src="./js/main.js"></script>
+
+
+
+
   </body>
 </html>
