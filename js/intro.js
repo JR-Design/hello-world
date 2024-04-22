@@ -28,7 +28,8 @@ intro.to(".highlight", {scaleX: 1, duration: 0.25, delay: 0, transformOrigin: "b
 intro.to("#portrait", {translateX: 0, duration: 0.65, delay: 0.25, }, "-=.85");
 intro.to("#portraitTrim", {scaleY: 1, scaleX: 1, duration: 0.65,  }, "-=1.55");
 
-
+intro.to(".socialMedia > div > a > img", {scaleY: 1, translateX: 0, duration: 0.75, stagger: 0.05 }, "-=0.5");
+intro.to("#colorSelector", {scaleY: 1, translateX: 0, duration: 0.5, delay: 0, stagger: 0.25 },"-=0.55");
 
 
 
